@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidenav{
+    background-color: rgb(44, 36, 36);
+    width: 20vw;
+    
+}
+.sidenav nav{
+    padding: 40px;
+    height: 100vh;
+}
+
+.sidenav nav li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+    padding: 35px 0;
+}
+
+.sidenav nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgb(109, 102, 102);
+    padding: 3px;
+}
+
+.main{
+    background-color: rgb(215, 225, 240);
+    width: 80vw;
+}
+
+.container{
+    display: flex;
+}
+
+.info{
+    border: 20px;
+    background-color: rgb(247, 247, 247);
+    height: 58vh;
+    width: 77vw;
+    margin: auto;
+    margin-top: 147px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.moreinfo{
+    margin-top: 3px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.start{
+    font-size: 25px;
+
+}
+.name{
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+
+}
+.self{
+
+}
+.buttons button{
+    background-color: rgb(28, 100, 255);
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    padding: 6px;
+}
+.buttons button:hover{
+    background:white;
+    color: rgb(28, 100, 255);
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.pic img{
+    height: 15vw;
+    align-items: center;
+    border-radius: 200px;
+    border: 1px solid black;
+    margin: 80px 0;
+}
+
+
+/* Contact form style */
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+.contact {
+    text-align: center;
+   margin-left: 12px;
+   color: #ffffff;
+   text-shadow: #a8a8a8;
+   font-family: sans-serif Merriweather;
+
+}
+.contactcontainer{
+    display: flex;
+    width: 80vw;
+    height: 100vw;
+    background-color: #a8a8a8;
+}
+.form{
+        margin-top: 140px;
+        margin-left: 65px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(#5082e0, #1d80ad);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 15px;
+}
+
+.cf{
+    padding: 10px 0;
+    margin: 12px 5px;
+}
+
+.form .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+input{
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.form a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03f4ac;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+.form label{
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.form .user-box{
+    position: relative;
+    margin: 17px 0;
+}
+
+.form a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03bcf4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+.form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #53cef3);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+
+.form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+
+.form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+  
+
+  @keyframes btn-anim1 {
+      0% {
+        left: -100%;
+      }
+      50%,100% {
+        left: 100%;
+      }
+    }
+  
+    @keyframes btn-anim2 {
+      0% {
+        top: -100%;
+      }
+      50%,100% {
+        top: 100%;
+      }
+    }
+  
+    @keyframes btn-anim3 {
+      0% {
+        right: -100%;
+      }
+      50%,100% {
+        right: 100%;
+      }
+    }
+.form a span{
+    position: absolute;
+    display: block;
+}
+
+.form a:hover {
+    background: #03f4cc;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03f4cc,
+                0 0 25px #03f4cc,
+                0 0 50px #03f4cc,
+                0 0 100px #03f4cc;
+}
+
+
+.form .user-box textarea{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.form .user-box input:focus ~ label,
+.form .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03f4f4;
+  font-size: 12px;
+}
+
+.form .user-box textarea:focus ~ label,
+.form .user-box textarea:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03f4f4;
+  font-size: 12px;
+}
+/* services style*/
+.services{
+  width: 100%;
+  height: 100vh;
+  padding: 0 8%;
+}
+.services h1{
+  text-align: center;
+  padding: 10%;
+  margin-bottom: 60px;
+  font-weight: 600;
+  position: relative;
+}
+.services h1::after{
+  content:'';
+  background: #303ef7;
+  width: 100px;
+  height:5px;
+  position: absolute;
+  bottom:50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+
+}
+.service{
+  text-align: center;
+  padding: 25px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  transition: trasnform 0.5s , background 0.5s ;
+}
+.service i{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #303ef7;
+
+}
+.service h2{
+  font-weight: 600;
+  margin-bottom: 8px;
+
+}
+.service:hover{
+  background: #303ef7;
+  color: #fff;
+  transform: scale(1.05);
+}
+.service:hover i{
+  color: #fff;
+}
+
+/*About Style*/
+.section{
+  font-family: 'Poppins', sans-serif;
+  background-color: #ddd;
+}
+.about{
+  width:80%;
+  display: block;
+  margin: auto;
+  padding-top: 100px;
+}
+.content-section{
+  float: left;
+  width: 55%;
+}
+.image-section{
+  float: right;
+  width:40%;
+}
+.image-section img{
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 200px;
+}
+.content-section .title{
+  text-transform: uppercase;
+  font-size: 21px;
+}
+.content-section .content h3{
+  margin-top: 20px;
+  color: #5d5d5d;
+}
+.content-section .content p{
+  margin-top: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.content-section .content .Rbutton{
+  margin-top: 30px;
+}
+.content-section .content .Rbutton a{
+  background-color: #3d3d3d;
+  border-radius: 7px;
+  padding: 12px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+.content-section .content .Rbutton a:hover{
+  background-color: #a52a2a;
+  color: #fff;
+}
+.content-section .social{
+  margin: 40px 30px;
+}
+.content-section .social i{
+  color: #a52a2a;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.content-section .social i:hover{
+  color: #3d3d3d;
+
+
+}
